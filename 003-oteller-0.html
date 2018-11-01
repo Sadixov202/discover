@@ -1,0 +1,1843 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+    <link href="./frq-templates/assets/img/bookmark_icon/app_icon_120.png" rel="apple-touch-icon" />
+    <link href="./frq-templates/assets/img/bookmark_icon/app_icon_152.png" rel="apple-touch-icon" sizes="152x152" />
+    <link href="./frq-templates/assets/img/bookmark_icon/app_icon_167.png" rel="apple-touch-icon" sizes="167x167" />
+    <link href="./frq-templates/assets/img/bookmark_icon/app_icon_180.png" rel="apple-touch-icon" sizes="180x180" />
+    <link href="./frq-templates/assets/img/bookmark_icon/app_icon_192.png" rel="icon" sizes="192x192" />
+    <link href="./frq-templates/assets/img/bookmark_icon/app_icon_128.png" rel="icon" sizes="128x128" />
+    <link rel="icon" href="./TEMP-IMAGES/favicon.ico" sizes="16x16">
+    <link href="./frq-templates/assets/style/bootstrap.css" rel="stylesheet">
+    <link href="./frq-templates/assets/style/bootstrap-theme.css" rel="stylesheet">
+    <link rel="stylesheet" href="./frq-templates/assets/fonts/material-icons.css">
+    <link rel="stylesheet" href="./frq-templates/assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="./frq-templates/assets/style/owl.carousel.min.css">
+    <link rel="stylesheet" href="./frq-templates/assets/style/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./frq-templates/assets/js/plugin/OverlayScrollbars.css">
+    <link rel="stylesheet" href="./frq-templates/assets/style/materialize.css">
+    <link rel="stylesheet" href="./frq-templates/assets/style/a_style.css">
+    <link rel="stylesheet" href="./frq-templates/assets/style/style.css">
+    <script src="./frq-templates/assets/js/plugin/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.15.1/moment.min.js"></script>
+    <link href="//cdn.bootcss.com/noUiSlider/8.5.1/nouislider.min.css" rel="stylesheet">
+    <script src="//cdn.bootcss.com/noUiSlider/8.5.1/nouislider.js"></script>
+</head>
+<body>
+    <div class="map_pop">
+    </div>
+    <div class="map_box">
+        <i class="material-icons close_map">close</i>
+        <div id="map"></div>
+    </div>
+    <div class="overlay visible-sm visible-xs"></div>
+
+    <header>
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-3">
+                    <div class="burger">
+                        <i class="material-icons">menu</i>
+                    </div>
+                    <div class="logo">
+                        <img src="./frq-templates/assets/img/file-img/logo.svg" alt="" class="img-responsive">
+                    </div>
+
+                </div>
+                <div class="col-md-6 hidden-sm hidden-xs">
+                    <div class="menu">
+                        <ul>
+                            <li>
+                                <a href="">Azerbaijan</a>
+                            </li>
+                            <li>
+                                <a href="">Hotels</a>
+                            </li>
+                            <li>
+                                <a href="">Houses for rent</a>
+                            </li>
+                            <li>
+                                <a href="">Restaurants</a>
+                            </li>
+                            <li class="li_icon">
+                                <a href="" class="more_">
+                                    <i class="material-icons">more_horiz</i>
+                                </a>
+                                <ul class="sub_ul">
+                                    <div class="top"></div>
+                                    <li>
+                                        <a href="">Entertainment</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Tours</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Events</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Transport</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Tourist catalog</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Tour planner</a>
+                                    </li>
+
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 hidden-sm hidden-xs">
+                    <div class="right-menu text-right">
+                        <div class="currency">
+                            <a href="" class="valute">
+                                <i class="material-icons">monetization_on</i>
+                                <p>Currency:
+                                    <span>USD</span>
+                                </p>
+                            </a>
+                            <ul class="text-center val_ul">
+                                <div class="top"></div>
+                                <li>
+                                    <a href="">azn</a>
+                                </li>
+                                <li>
+                                    <a href="">usd</a>
+                                </li>
+                                <li>
+                                    <a href="">eur</a>
+                                </li>
+                                <li>
+                                    <a href="">rub</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="sing_in">
+                            <a href="">
+                                <i class="material-icons">input</i>
+                                <p>Sing In</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="respon_menu ">
+        <div class="mobile_menu tab_menu visible-sm visible-xs">
+            <div class="header">
+                <div class="burger">
+                    <i class="material-icons">close</i>
+                </div>
+                <div class="logo">
+                    <img src="./frq-templates/assets/img/file-img/logo.svg" alt="" class="img-responsive">
+                </div>
+            </div>
+            <div class="log_in text-center">
+                <ul>
+                    <li>
+                        <a href="" class="sing">
+                            <i class="material-icons">input</i>
+                            Sing In
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="oreng">
+                            <i class="material-icons">business_center</i>
+                            Company login
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="m_valute">
+                <ul class="main">
+                    <li>
+                        <a href="" class="c_valute">
+                            <i class="material-icons">monetization_on</i>
+                            <p>Currency:
+                                <span>USD</span>
+                            </p>
+                            <i class="material-icons pull-right">expand_more</i>
+                        </a>
+                        <ul class="text-center sec_ul">
+                            <div class="top"></div>
+                            <li>
+                                <a href="">azn</a>
+                            </li>
+                            <li>
+                                <a href="">usd</a>
+                            </li>
+                            <li>
+                                <a href="">eur</a>
+                            </li>
+                            <li>
+                                <a href="">rub</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="foot">
+                <ul>
+                    <li>
+                        <a href="">Azerbaijan</a>
+                    </li>
+                    <li>
+                        <a href="">Hotels</a>
+                    </li>
+                    <li>
+                        <a href="">Houses for rent</a>
+                    </li>
+                    <li>
+                        <a href="">Restaurants</a>
+                    </li>
+                    <li>
+                        <a href="">Entertainment</a>
+                    </li>
+                    <li>
+                        <a href="">Tours</a>
+                    </li>
+                    <li>
+                        <a href="">Events</a>
+                    </li>
+                    <li>
+                        <a href="">Transport</a>
+                    </li>
+                    <li>
+                        <a href="">Tourist catalog</a>
+                    </li>
+                    <li>
+                        <a href="">Tour planner</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="hotel_filter">
+        <div class="container">
+            <div class="border_bot">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="title">
+                            <h2>Hotels</h2>
+                        </div>
+                    </div>
+                    <div class="col-md-9">
+                        <form action="">
+                            <ul class="filters">
+                                <li class="input">
+                                    <input type="text" placeholder="Baku">
+                                    <i class="material-icons">place</i>
+                                </li>
+                                <li class="selec_loc">
+                                    <a href="" class="this">Location</a>
+                                    <i class="material-icons">arrow_drop_down</i>
+                                    <ul class="selec_ul">
+                                        <div class="top"></div>
+                                        <li>
+                                            <a href="">Seaside</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Urban</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Village</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="selec_stars">
+                                    <div class="star">
+                                        <i class="material-icons">stars</i>
+                                        <i class="material-icons">stars</i>
+                                        <i class="material-icons">stars</i>
+                                        <i class="material-icons">stars</i>
+                                        <i class="material-icons">stars</i>
+                                    </div>
+                                    <i class="material-icons down">arrow_drop_down</i>
+                                    <ul class="s_star_ul">
+                                        <div class="top"></div>
+                                        <li>
+                                            <i class="material-icons">stars</i>
+                                            <i class="material-icons">stars</i>
+                                            <i class="material-icons">stars</i>
+                                            <i class="material-icons">stars</i>
+                                            <i class="material-icons">stars</i>
+                                            <i class="material-icons">stars</i>
+                                            <i class="material-icons">stars</i>
+                                        </li>
+                                        <li>
+                                            <i class="material-icons">stars</i>
+                                            <i class="material-icons">stars</i>
+                                            <i class="material-icons">stars</i>
+                                            <i class="material-icons">stars</i>
+                                            <i class="material-icons">stars</i>
+                                            <i class="material-icons">stars</i>
+                                        </li>
+                                        <li>
+                                            <i class="material-icons">stars</i>
+                                            <i class="material-icons">stars</i>
+                                            <i class="material-icons">stars</i>
+                                            <i class="material-icons">stars</i>
+                                            <i class="material-icons">stars</i>
+                                        </li>
+                                        <li>
+                                            <i class="material-icons">stars</i>
+                                            <i class="material-icons">stars</i>
+                                            <i class="material-icons">stars</i>
+                                            <i class="material-icons">stars</i>
+                                        </li>
+                                        <li>
+                                            <i class="material-icons">stars</i>
+                                            <i class="material-icons">stars</i>
+                                            <i class="material-icons">stars</i>
+                                        </li>
+                                        <li>
+                                            <i class="material-icons">stars</i>
+                                            <i class="material-icons">stars</i>
+                                        </li>
+                                        <li>
+                                            <i class="material-icons">stars</i>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="s_butt">
+                                    <button type="submit">Filter</button>
+                                </li>
+                            </ul>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="filter_list">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="left">
+                        <div id="m_p">
+                            <div class="back_map" style="background-image:url('./frq-templates/assets/img/file-img/lit_map.png')"></div>
+                            <a href="">
+                                <i class="material-icons can_i">pin_drop</i>
+                                View results on map
+                            </a>
+                        </div>
+                        <div class="word">
+                            <a href="">
+                                <i class="material-icons src_i">search</i>
+                            </a>
+                            <a href="">
+                                <i class="material-icons can_i">cancel</i>
+                            </a>
+                            <input type="text" name="" id="" placeholder="Key word">
+                        </div>
+                        <div class="cous_f">
+                            <p>Resent settings:
+                                <a href="">delete all</a>
+                            </p>
+                            <ul>
+                                <li>
+                                    AZN 0 - AZN 177
+                                    <a href="">
+                                        <i class="material-icons src_i">cancel</i>
+                                    </a>
+                                </li>
+                                <li>
+                                    Luxury
+                                    <a href="">
+                                        <i class="material-icons src_i">cancel</i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <span>
+                                        <i class="material-icons src_i">star</i>
+                                        <i class="material-icons src_i">star</i>
+                                        <i class="material-icons src_i">star</i>
+                                        <i class="material-icons src_i">star</i>
+                                        <i class="material-icons src_i">star</i>
+                                    </span>
+                                    <a href="">
+                                        <i class="material-icons src_i">cancel</i>
+                                    </a>
+                                </li>
+                                <li>
+                                    Seaside
+                                    <a href="">
+                                        <i class="material-icons src_i">cancel</i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div id="noUiSlider">
+                            <h2>Night price:</h2>
+                            <div id="range"></div>
+                            <input type="text" name="space_low" step="5" id="min" class="area first" placeholder="0" value="">
+                            <input type="text" name="space_high" step="5" id="max" class="area" placeholder="200" value="">
+                        </div>
+                        <div class="distans">
+                            <h2>Long way:</h2>
+                            <div class="up_selec">
+                                <select>
+                                    <option value="">Object</option>
+                                    <option value="">Metro</option>
+                                    <option value="">Airport</option>
+                                </select>
+                            </div>
+                            <div class="down_selec">
+                                <label for="">Distance:</label>
+                                <select>
+                                    <option value="">10 km</option>
+                                    <option value="">5 km</option>
+                                    <option value="">20 km</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="reyting">
+                            <h2>Rating:</h2>
+
+                            <div class="radio">
+                                <input id="radio-1" name="radio" type="radio" checked>
+                                <label for="radio-1" class="radio-label">
+                                    <i class="material-icons src_i">star</i>
+                                    <i class="material-icons src_i">star</i>
+                                    <i class="material-icons src_i">star</i>
+                                    <i class="material-icons src_i">star</i>
+                                    <i class="material-icons src_i">star</i>
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <input id="radio-2" name="radio" type="radio">
+                                <label for="radio-2" class="radio-label">
+                                    <i class="material-icons src_i">star</i>
+                                    <i class="material-icons src_i">star</i>
+                                    <i class="material-icons src_i">star</i>
+                                    <i class="material-icons src_i">star</i>
+                                    <i class="material-icons src_i">star_border</i>
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <input id="radio-3" name="radio" type="radio">
+                                <label for="radio-3" class="radio-label">
+                                    <i class="material-icons src_i">star</i>
+                                    <i class="material-icons src_i">star</i>
+                                    <i class="material-icons src_i">star</i>
+                                    <i class="material-icons src_i">star_border</i>
+                                    <i class="material-icons src_i">star_border</i>
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <input id="radio-4" name="radio" type="radio">
+                                <label for="radio-4" class="radio-label">
+                                    <i class="material-icons src_i">star</i>
+                                    <i class="material-icons src_i">star</i>
+                                    <i class="material-icons src_i">star_border</i>
+                                    <i class="material-icons src_i">star_border</i>
+                                    <i class="material-icons src_i">star_border</i>
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <input id="radio-5" name="radio" type="radio">
+                                <label for="radio-5" class="radio-label">
+                                    <i class="material-icons src_i">star</i>
+                                    <i class="material-icons src_i">star_border</i>
+                                    <i class="material-icons src_i">star_border</i>
+                                    <i class="material-icons src_i">star_border</i>
+                                    <i class="material-icons src_i">star_border</i>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="style">
+                            <h2>Style:</h2>
+                            <label>
+                                <input type="checkbox" class="filled-in">
+                                <span>Luxury</span>
+                            </label>
+                            <label>
+                                <input type="checkbox" class="filled-in">
+                                <span>Luxury</span>
+                            </label>
+                            <label>
+                                <input type="checkbox" class="filled-in">
+                                <span>Luxury</span>
+                            </label>
+                            <label class="hidden">
+                                <input type="checkbox" class="filled-in">
+                                <span>Luxury</span>
+                            </label>
+                            <a href="">
+                                <i class="material-icons src_i">arrow_drop_down</i>
+                                More
+                            </a>
+                        </div>
+                        <div class="flex_div">
+                            <div class="reklam_blog">
+                                <a href=""> 
+                                     <img src="./frq-templates/assets/img/content-img/reklam_2.png" alt="">
+                                </a>
+                             </div>
+                             <div class="reklam_blog">
+                                 <a href=""> 
+                                      <img src="./frq-templates/assets/img/content-img/reklam_2.png" alt="">
+                                 </a>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <div class="right">
+                        <div class="sort">
+                            <ul>
+                                <li>
+                                    <span>Sort:</span>
+                                </li>
+                                <li>
+                                    <a href="" class="sort_active">A-Z</a>
+                                </li>
+                                <li>
+                                    <a href="">Rating
+                                        <i class="material-icons up">trending_flat</i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">Price
+                                        <i class="material-icons down">trending_flat</i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 col-sm-6">
+                                <div class="item_result">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <a href="">
+                                                <img src="./frq-templates/assets/img/content-img/hotel_1.png" alt="" class="img-responsive">
+                                            </a>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="h_name">
+                                                <a href="">
+                                                    <h2>Four Seasons Hotel Baku</h2>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="reyting">
+                                                <p>Bakı</p>
+                                                <i class="material-icons">stars</i>
+                                                <i class="material-icons">stars</i>
+                                                <i class="material-icons">stars</i>
+                                                <i class="material-icons">stars</i>
+                                            </div>
+                                            <div class="price">
+                                                <p>250 - 460</p>
+                                                <div class="svg_manat">
+                                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1000 1000"
+                                                        enable-background="new 0 0 1000 1000" xml:space="preserve">
+                                                        <metadata> Svg Vector Icons : http://www.onlinewebfonts.com/icon </metadata>
+                                                        <g>
+                                                            <g transform="translate(0.000000,511.000000) scale(0.100000,-0.100000)">
+                                                                <path d="M5005.1,3964.7l-332.4-144.8v-236.6c0-130.5-6.1-269.2-12.2-310l-12.2-73.4l-238.6-46.9c-832.1-161.1-1601-575.2-2225.1-1203.3C1019.8,781,293.8-1172.9,114.3-3620.3L100-3797.8l79.6-12.3c42.8-6.1,263.1-16.3,489.5-24.5l414-14.3v69.3c2,199.9,44.9,921.9,73.4,1170.7c248.8,2321,1240,4091.3,2724.8,4872.5c197.8,106.1,538.4,236.6,685.3,263.1l65.3,14.3v-150.9c0-132.6-118.3-4242.2-155-5343.6c-8.2-248.8-6.1-422.2,4.1-416.1c432.4,242.7,942.3,538.4,962.7,556.8c22.4,20.4,20.4,503.8-8.2,2680c-18.3,1460.3-28.5,2659.6-22.4,2665.7c12.2,14.3,361-63.2,524.2-116.3c73.4-24.5,242.7-95.9,377.3-161.1c1439.9-693.4,2294.5-2529,2539.2-5451.7c55.1-642.5,55.1-642.5,97.9-654.7c18.4-4.1,240.7-16.3,491.5-24.5l456.8-14.3l-14.3,293.7c-51,1062.6-206,1968.2-485.4,2832.9c-713.8,2214.9-2202.7,3767-3818,3985.3l-185.6,24.5l-6.1,432.4c-4.1,326.3-10.2,432.4-30.6,430.3C5347.8,4107.5,5186.6,4042.2,5005.1,3964.7z"
+                                                                />
+                                                            </g>
+                                                        </g>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <div class="etrafli hidden-sm hidden-xs">
+                                                <a href="">More</a>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="right_ul">
+                                                <ul>
+                                                    <li class="str_li">
+                                                        <i class="material-icons">star</i>
+                                                        <i class="material-icons">star</i>
+                                                        <i class="material-icons">star</i>
+                                                        <i class="material-icons">star</i>
+                                                        <i class="material-icons">star</i>
+                                                        <span>1207 reviews</span>
+                                                    </li>
+                                                    <li>
+                                                        <i class="material-icons">wifi_tethering</i>
+                                                        <span>Pulsuz WiFi</span>
+                                                    </li>
+                                                    <li>
+                                                        <i class="material-icons">directions_car</i>
+                                                        <span>Pulsuz avtomobil parkı</span>
+                                                    </li>
+                                                    <li>
+                                                        <i class="material-icons">local_cafe</i>
+                                                        <span>Pulsuz səhər yeməyi</span>
+                                                    </li>
+                                                    <li>
+                                                        <i class="material-icons">pool</i>
+                                                        <span>Su hovuzu</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12 visible-sm visible-xs">
+                                            <div class="etrafli">
+                                                <a href="">More</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-sm-6">
+                                <div class="item_result">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <a href="">
+                                                <img src="./frq-templates/assets/img/content-img/hotel_1.png" alt="" class="img-responsive">
+                                            </a>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="h_name">
+                                                <a href="">
+                                                    <h2>Four Seasons Hotel Baku</h2>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="reyting">
+                                                <p>Bakı</p>
+                                                <i class="material-icons">stars</i>
+                                                <i class="material-icons">stars</i>
+                                                <i class="material-icons">stars</i>
+                                                <i class="material-icons">stars</i>
+                                            </div>
+                                            <div class="price">
+                                                <p>250 - 460</p>
+                                                <div class="svg_manat">
+                                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1000 1000"
+                                                        enable-background="new 0 0 1000 1000" xml:space="preserve">
+                                                        <metadata> Svg Vector Icons : http://www.onlinewebfonts.com/icon </metadata>
+                                                        <g>
+                                                            <g transform="translate(0.000000,511.000000) scale(0.100000,-0.100000)">
+                                                                <path d="M5005.1,3964.7l-332.4-144.8v-236.6c0-130.5-6.1-269.2-12.2-310l-12.2-73.4l-238.6-46.9c-832.1-161.1-1601-575.2-2225.1-1203.3C1019.8,781,293.8-1172.9,114.3-3620.3L100-3797.8l79.6-12.3c42.8-6.1,263.1-16.3,489.5-24.5l414-14.3v69.3c2,199.9,44.9,921.9,73.4,1170.7c248.8,2321,1240,4091.3,2724.8,4872.5c197.8,106.1,538.4,236.6,685.3,263.1l65.3,14.3v-150.9c0-132.6-118.3-4242.2-155-5343.6c-8.2-248.8-6.1-422.2,4.1-416.1c432.4,242.7,942.3,538.4,962.7,556.8c22.4,20.4,20.4,503.8-8.2,2680c-18.3,1460.3-28.5,2659.6-22.4,2665.7c12.2,14.3,361-63.2,524.2-116.3c73.4-24.5,242.7-95.9,377.3-161.1c1439.9-693.4,2294.5-2529,2539.2-5451.7c55.1-642.5,55.1-642.5,97.9-654.7c18.4-4.1,240.7-16.3,491.5-24.5l456.8-14.3l-14.3,293.7c-51,1062.6-206,1968.2-485.4,2832.9c-713.8,2214.9-2202.7,3767-3818,3985.3l-185.6,24.5l-6.1,432.4c-4.1,326.3-10.2,432.4-30.6,430.3C5347.8,4107.5,5186.6,4042.2,5005.1,3964.7z"
+                                                                />
+                                                            </g>
+                                                        </g>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <div class="etrafli hidden-sm hidden-xs">
+                                                <a href="">More</a>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="right_ul">
+                                                <ul>
+                                                    <li class="str_li">
+                                                        <i class="material-icons">star</i>
+                                                        <i class="material-icons">star</i>
+                                                        <i class="material-icons">star</i>
+                                                        <i class="material-icons">star</i>
+                                                        <i class="material-icons">star</i>
+                                                        <span>1207 reviews</span>
+                                                    </li>
+                                                    <li>
+                                                        <i class="material-icons">wifi_tethering</i>
+                                                        <span>Pulsuz WiFi</span>
+                                                    </li>
+                                                    <li>
+                                                        <i class="material-icons">directions_car</i>
+                                                        <span>Pulsuz avtomobil parkı</span>
+                                                    </li>
+                                                    <li>
+                                                        <i class="material-icons">local_cafe</i>
+                                                        <span>Pulsuz səhər yeməyi</span>
+                                                    </li>
+                                                    <li>
+                                                        <i class="material-icons">pool</i>
+                                                        <span>Su hovuzu</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12 visible-sm visible-xs">
+                                            <div class="etrafli">
+                                                <a href="">More</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-sm-6">
+                                <div class="item_result">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <a href="">
+                                                <img src="./frq-templates/assets/img/content-img/hotel_2.png" alt="" class="img-responsive">
+                                            </a>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="h_name">
+                                                <a href="">
+                                                    <h2>Ramada Hotel Gabala</h2>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="reyting">
+                                                <p>Bakı</p>
+                                                <i class="material-icons">stars</i>
+                                                <i class="material-icons">stars</i>
+                                                <i class="material-icons">stars</i>
+                                                <i class="material-icons">stars</i>
+                                            </div>
+                                            <div class="price">
+                                                <p>250 - 460</p>
+                                                <div class="svg_manat">
+                                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1000 1000"
+                                                        enable-background="new 0 0 1000 1000" xml:space="preserve">
+                                                        <metadata> Svg Vector Icons : http://www.onlinewebfonts.com/icon </metadata>
+                                                        <g>
+                                                            <g transform="translate(0.000000,511.000000) scale(0.100000,-0.100000)">
+                                                                <path d="M5005.1,3964.7l-332.4-144.8v-236.6c0-130.5-6.1-269.2-12.2-310l-12.2-73.4l-238.6-46.9c-832.1-161.1-1601-575.2-2225.1-1203.3C1019.8,781,293.8-1172.9,114.3-3620.3L100-3797.8l79.6-12.3c42.8-6.1,263.1-16.3,489.5-24.5l414-14.3v69.3c2,199.9,44.9,921.9,73.4,1170.7c248.8,2321,1240,4091.3,2724.8,4872.5c197.8,106.1,538.4,236.6,685.3,263.1l65.3,14.3v-150.9c0-132.6-118.3-4242.2-155-5343.6c-8.2-248.8-6.1-422.2,4.1-416.1c432.4,242.7,942.3,538.4,962.7,556.8c22.4,20.4,20.4,503.8-8.2,2680c-18.3,1460.3-28.5,2659.6-22.4,2665.7c12.2,14.3,361-63.2,524.2-116.3c73.4-24.5,242.7-95.9,377.3-161.1c1439.9-693.4,2294.5-2529,2539.2-5451.7c55.1-642.5,55.1-642.5,97.9-654.7c18.4-4.1,240.7-16.3,491.5-24.5l456.8-14.3l-14.3,293.7c-51,1062.6-206,1968.2-485.4,2832.9c-713.8,2214.9-2202.7,3767-3818,3985.3l-185.6,24.5l-6.1,432.4c-4.1,326.3-10.2,432.4-30.6,430.3C5347.8,4107.5,5186.6,4042.2,5005.1,3964.7z"
+                                                                />
+                                                            </g>
+                                                        </g>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <div class="etrafli hidden-sm hidden-xs">
+                                                <a href="">More</a>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="right_ul">
+                                                <ul>
+                                                    <li class="str_li">
+                                                        <i class="material-icons">star</i>
+                                                        <i class="material-icons">star</i>
+                                                        <i class="material-icons">star</i>
+                                                        <i class="material-icons">star</i>
+                                                        <i class="material-icons">star</i>
+                                                        <span>1207 reviews</span>
+                                                    </li>
+                                                    <li>
+                                                        <i class="material-icons">wifi_tethering</i>
+                                                        <span>Pulsuz WiFi</span>
+                                                    </li>
+                                                    <li>
+                                                        <i class="material-icons">directions_car</i>
+                                                        <span>Pulsuz avtomobil parkı</span>
+                                                    </li>
+                                                    <li>
+                                                        <i class="material-icons">local_cafe</i>
+                                                        <span>Pulsuz səhər yeməyi</span>
+                                                    </li>
+                                                    <li>
+                                                        <i class="material-icons">pool</i>
+                                                        <span>Su hovuzu</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12 visible-sm visible-xs">
+                                            <div class="etrafli">
+                                                <a href="">More</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-sm-6">
+                                <div class="item_result">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <a href="">
+                                                <img src="./frq-templates/assets/img/content-img/hotel_4.png" alt="" class="img-responsive">
+                                            </a>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="h_name">
+                                                <a href="">
+                                                    <h2>Opera Hotel</h2>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="reyting">
+                                                <p>Bakı</p>
+                                                <i class="material-icons">stars</i>
+                                                <i class="material-icons">stars</i>
+                                                <i class="material-icons">stars</i>
+                                                <i class="material-icons">stars</i>
+                                            </div>
+                                            <div class="price">
+                                                <p>250 - 460</p>
+                                                <div class="svg_manat">
+                                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1000 1000"
+                                                        enable-background="new 0 0 1000 1000" xml:space="preserve">
+                                                        <metadata> Svg Vector Icons : http://www.onlinewebfonts.com/icon </metadata>
+                                                        <g>
+                                                            <g transform="translate(0.000000,511.000000) scale(0.100000,-0.100000)">
+                                                                <path d="M5005.1,3964.7l-332.4-144.8v-236.6c0-130.5-6.1-269.2-12.2-310l-12.2-73.4l-238.6-46.9c-832.1-161.1-1601-575.2-2225.1-1203.3C1019.8,781,293.8-1172.9,114.3-3620.3L100-3797.8l79.6-12.3c42.8-6.1,263.1-16.3,489.5-24.5l414-14.3v69.3c2,199.9,44.9,921.9,73.4,1170.7c248.8,2321,1240,4091.3,2724.8,4872.5c197.8,106.1,538.4,236.6,685.3,263.1l65.3,14.3v-150.9c0-132.6-118.3-4242.2-155-5343.6c-8.2-248.8-6.1-422.2,4.1-416.1c432.4,242.7,942.3,538.4,962.7,556.8c22.4,20.4,20.4,503.8-8.2,2680c-18.3,1460.3-28.5,2659.6-22.4,2665.7c12.2,14.3,361-63.2,524.2-116.3c73.4-24.5,242.7-95.9,377.3-161.1c1439.9-693.4,2294.5-2529,2539.2-5451.7c55.1-642.5,55.1-642.5,97.9-654.7c18.4-4.1,240.7-16.3,491.5-24.5l456.8-14.3l-14.3,293.7c-51,1062.6-206,1968.2-485.4,2832.9c-713.8,2214.9-2202.7,3767-3818,3985.3l-185.6,24.5l-6.1,432.4c-4.1,326.3-10.2,432.4-30.6,430.3C5347.8,4107.5,5186.6,4042.2,5005.1,3964.7z"
+                                                                />
+                                                            </g>
+                                                        </g>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <div class="etrafli hidden-sm hidden-xs">
+                                                <a href="">More</a>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="right_ul">
+                                                <ul>
+                                                    <li class="str_li">
+                                                        <i class="material-icons">star</i>
+                                                        <i class="material-icons">star</i>
+                                                        <i class="material-icons">star</i>
+                                                        <i class="material-icons">star</i>
+                                                        <i class="material-icons">star_border</i>
+                                                        <span>1207 reviews</span>
+                                                    </li>
+                                                    <li>
+                                                        <i class="material-icons">wifi_tethering</i>
+                                                        <span>Pulsuz WiFi</span>
+                                                    </li>
+                                                    <li>
+                                                        <i class="material-icons">directions_car</i>
+                                                        <span>Pulsuz avtomobil parkı</span>
+                                                    </li>
+                                                    <li>
+                                                        <i class="material-icons">local_cafe</i>
+                                                        <span>Pulsuz səhər yeməyi</span>
+                                                    </li>
+                                                    <li>
+                                                        <i class="material-icons">pool</i>
+                                                        <span>Su hovuzu</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12 visible-sm visible-xs">
+                                            <div class="etrafli">
+                                                <a href="">More</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-sm-6">
+                                <div class="item_result">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <a href="">
+                                                <img src="./frq-templates/assets/img/content-img/hotel_1.png" alt="" class="img-responsive">
+                                            </a>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="h_name">
+                                                <a href="">
+                                                    <h2>Boulevard Hotel Baku Autographs</h2>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="reyting">
+                                                <p>Bakı</p>
+                                                <i class="material-icons">stars</i>
+                                                <i class="material-icons">stars</i>
+                                                <i class="material-icons">stars</i>
+                                                <i class="material-icons">stars</i>
+                                            </div>
+                                            <div class="price">
+                                                <p>250 - 460</p>
+                                                <div class="svg_manat">
+                                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1000 1000"
+                                                        enable-background="new 0 0 1000 1000" xml:space="preserve">
+                                                        <metadata> Svg Vector Icons : http://www.onlinewebfonts.com/icon </metadata>
+                                                        <g>
+                                                            <g transform="translate(0.000000,511.000000) scale(0.100000,-0.100000)">
+                                                                <path d="M5005.1,3964.7l-332.4-144.8v-236.6c0-130.5-6.1-269.2-12.2-310l-12.2-73.4l-238.6-46.9c-832.1-161.1-1601-575.2-2225.1-1203.3C1019.8,781,293.8-1172.9,114.3-3620.3L100-3797.8l79.6-12.3c42.8-6.1,263.1-16.3,489.5-24.5l414-14.3v69.3c2,199.9,44.9,921.9,73.4,1170.7c248.8,2321,1240,4091.3,2724.8,4872.5c197.8,106.1,538.4,236.6,685.3,263.1l65.3,14.3v-150.9c0-132.6-118.3-4242.2-155-5343.6c-8.2-248.8-6.1-422.2,4.1-416.1c432.4,242.7,942.3,538.4,962.7,556.8c22.4,20.4,20.4,503.8-8.2,2680c-18.3,1460.3-28.5,2659.6-22.4,2665.7c12.2,14.3,361-63.2,524.2-116.3c73.4-24.5,242.7-95.9,377.3-161.1c1439.9-693.4,2294.5-2529,2539.2-5451.7c55.1-642.5,55.1-642.5,97.9-654.7c18.4-4.1,240.7-16.3,491.5-24.5l456.8-14.3l-14.3,293.7c-51,1062.6-206,1968.2-485.4,2832.9c-713.8,2214.9-2202.7,3767-3818,3985.3l-185.6,24.5l-6.1,432.4c-4.1,326.3-10.2,432.4-30.6,430.3C5347.8,4107.5,5186.6,4042.2,5005.1,3964.7z"
+                                                                />
+                                                            </g>
+                                                        </g>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <div class="etrafli hidden-sm hidden-xs">
+                                                <a href="">More</a>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="right_ul">
+                                                <ul>
+                                                    <li class="str_li">
+                                                        <i class="material-icons">star</i>
+                                                        <i class="material-icons">star</i>
+                                                        <i class="material-icons">star</i>
+                                                        <i class="material-icons">star</i>
+                                                        <i class="material-icons">star</i>
+                                                        <span>1207 reviews</span>
+                                                    </li>
+                                                    <li>
+                                                        <i class="material-icons">wifi_tethering</i>
+                                                        <span>Pulsuz WiFi</span>
+                                                    </li>
+                                                    <li>
+                                                        <i class="material-icons">directions_car</i>
+                                                        <span>Pulsuz avtomobil parkı</span>
+                                                    </li>
+                                                    <li>
+                                                        <i class="material-icons">local_cafe</i>
+                                                        <span>Pulsuz səhər yeməyi</span>
+                                                    </li>
+                                                    <li>
+                                                        <i class="material-icons">pool</i>
+                                                        <span>Su hovuzu</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12 visible-sm visible-xs">
+                                            <div class="etrafli">
+                                                <a href="">More</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-sm-6">
+                                <div class="item_result">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <a href="">
+                                                <img src="./frq-templates/assets/img/content-img/hotel_1.png" alt="" class="img-responsive">
+                                            </a>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="h_name">
+                                                <a href="">
+                                                    <h2>Boulevard Hotel Baku Autographs</h2>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="reyting">
+                                                <p>Bakı</p>
+                                                <i class="material-icons">stars</i>
+                                                <i class="material-icons">stars</i>
+                                                <i class="material-icons">stars</i>
+                                                <i class="material-icons">stars</i>
+                                            </div>
+                                            <div class="price">
+                                                <p>250 - 460</p>
+                                                <div class="svg_manat">
+                                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1000 1000"
+                                                        enable-background="new 0 0 1000 1000" xml:space="preserve">
+                                                        <metadata> Svg Vector Icons : http://www.onlinewebfonts.com/icon </metadata>
+                                                        <g>
+                                                            <g transform="translate(0.000000,511.000000) scale(0.100000,-0.100000)">
+                                                                <path d="M5005.1,3964.7l-332.4-144.8v-236.6c0-130.5-6.1-269.2-12.2-310l-12.2-73.4l-238.6-46.9c-832.1-161.1-1601-575.2-2225.1-1203.3C1019.8,781,293.8-1172.9,114.3-3620.3L100-3797.8l79.6-12.3c42.8-6.1,263.1-16.3,489.5-24.5l414-14.3v69.3c2,199.9,44.9,921.9,73.4,1170.7c248.8,2321,1240,4091.3,2724.8,4872.5c197.8,106.1,538.4,236.6,685.3,263.1l65.3,14.3v-150.9c0-132.6-118.3-4242.2-155-5343.6c-8.2-248.8-6.1-422.2,4.1-416.1c432.4,242.7,942.3,538.4,962.7,556.8c22.4,20.4,20.4,503.8-8.2,2680c-18.3,1460.3-28.5,2659.6-22.4,2665.7c12.2,14.3,361-63.2,524.2-116.3c73.4-24.5,242.7-95.9,377.3-161.1c1439.9-693.4,2294.5-2529,2539.2-5451.7c55.1-642.5,55.1-642.5,97.9-654.7c18.4-4.1,240.7-16.3,491.5-24.5l456.8-14.3l-14.3,293.7c-51,1062.6-206,1968.2-485.4,2832.9c-713.8,2214.9-2202.7,3767-3818,3985.3l-185.6,24.5l-6.1,432.4c-4.1,326.3-10.2,432.4-30.6,430.3C5347.8,4107.5,5186.6,4042.2,5005.1,3964.7z"
+                                                                />
+                                                            </g>
+                                                        </g>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <div class="etrafli hidden-sm hidden-xs">
+                                                <a href="">More</a>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="right_ul">
+                                                <ul>
+                                                    <li class="str_li">
+                                                        <i class="material-icons">star</i>
+                                                        <i class="material-icons">star</i>
+                                                        <i class="material-icons">star</i>
+                                                        <i class="material-icons">star</i>
+                                                        <i class="material-icons">star</i>
+                                                        <span>1207 reviews</span>
+                                                    </li>
+                                                    <li>
+                                                        <i class="material-icons">wifi_tethering</i>
+                                                        <span>Pulsuz WiFi</span>
+                                                    </li>
+                                                    <li>
+                                                        <i class="material-icons">directions_car</i>
+                                                        <span>Pulsuz avtomobil parkı</span>
+                                                    </li>
+                                                    <li>
+                                                        <i class="material-icons">local_cafe</i>
+                                                        <span>Pulsuz səhər yeməyi</span>
+                                                    </li>
+                                                    <li>
+                                                        <i class="material-icons">pool</i>
+                                                        <span>Su hovuzu</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12 visible-sm visible-xs">
+                                            <div class="etrafli">
+                                                <a href="">More</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-sm-6">
+                                <div class="item_result">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <a href="">
+                                                <img src="./frq-templates/assets/img/content-img/hotel_1.png" alt="" class="img-responsive">
+                                            </a>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="h_name">
+                                                <a href="">
+                                                    <h2>Boulevard Hotel Baku Autographs</h2>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="reyting">
+                                                <p>Bakı</p>
+                                                <i class="material-icons">stars</i>
+                                                <i class="material-icons">stars</i>
+                                                <i class="material-icons">stars</i>
+                                                <i class="material-icons">stars</i>
+                                            </div>
+                                            <div class="price">
+                                                <p>250 - 460</p>
+                                                <div class="svg_manat">
+                                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1000 1000"
+                                                        enable-background="new 0 0 1000 1000" xml:space="preserve">
+                                                        <metadata> Svg Vector Icons : http://www.onlinewebfonts.com/icon </metadata>
+                                                        <g>
+                                                            <g transform="translate(0.000000,511.000000) scale(0.100000,-0.100000)">
+                                                                <path d="M5005.1,3964.7l-332.4-144.8v-236.6c0-130.5-6.1-269.2-12.2-310l-12.2-73.4l-238.6-46.9c-832.1-161.1-1601-575.2-2225.1-1203.3C1019.8,781,293.8-1172.9,114.3-3620.3L100-3797.8l79.6-12.3c42.8-6.1,263.1-16.3,489.5-24.5l414-14.3v69.3c2,199.9,44.9,921.9,73.4,1170.7c248.8,2321,1240,4091.3,2724.8,4872.5c197.8,106.1,538.4,236.6,685.3,263.1l65.3,14.3v-150.9c0-132.6-118.3-4242.2-155-5343.6c-8.2-248.8-6.1-422.2,4.1-416.1c432.4,242.7,942.3,538.4,962.7,556.8c22.4,20.4,20.4,503.8-8.2,2680c-18.3,1460.3-28.5,2659.6-22.4,2665.7c12.2,14.3,361-63.2,524.2-116.3c73.4-24.5,242.7-95.9,377.3-161.1c1439.9-693.4,2294.5-2529,2539.2-5451.7c55.1-642.5,55.1-642.5,97.9-654.7c18.4-4.1,240.7-16.3,491.5-24.5l456.8-14.3l-14.3,293.7c-51,1062.6-206,1968.2-485.4,2832.9c-713.8,2214.9-2202.7,3767-3818,3985.3l-185.6,24.5l-6.1,432.4c-4.1,326.3-10.2,432.4-30.6,430.3C5347.8,4107.5,5186.6,4042.2,5005.1,3964.7z"
+                                                                />
+                                                            </g>
+                                                        </g>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <div class="etrafli hidden-sm hidden-xs">
+                                                <a href="">More</a>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="right_ul">
+                                                <ul>
+                                                    <li class="str_li">
+                                                        <i class="material-icons">star</i>
+                                                        <i class="material-icons">star</i>
+                                                        <i class="material-icons">star</i>
+                                                        <i class="material-icons">star</i>
+                                                        <i class="material-icons">star</i>
+                                                        <span>1207 reviews</span>
+                                                    </li>
+                                                    <li>
+                                                        <i class="material-icons">wifi_tethering</i>
+                                                        <span>Pulsuz WiFi</span>
+                                                    </li>
+                                                    <li>
+                                                        <i class="material-icons">directions_car</i>
+                                                        <span>Pulsuz avtomobil parkı</span>
+                                                    </li>
+                                                    <li>
+                                                        <i class="material-icons">local_cafe</i>
+                                                        <span>Pulsuz səhər yeməyi</span>
+                                                    </li>
+                                                    <li>
+                                                        <i class="material-icons">pool</i>
+                                                        <span>Su hovuzu</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12 visible-sm visible-xs">
+                                            <div class="etrafli">
+                                                <a href="">More</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-sm-6">
+                                <div class="item_result">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <a href="">
+                                                <img src="./frq-templates/assets/img/content-img/hotel_1.png" alt="" class="img-responsive">
+                                            </a>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="h_name">
+                                                <a href="">
+                                                    <h2>Boulevard Hotel Baku Autographs</h2>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="reyting">
+                                                <p>Bakı</p>
+                                                <i class="material-icons">stars</i>
+                                                <i class="material-icons">stars</i>
+                                                <i class="material-icons">stars</i>
+                                                <i class="material-icons">stars</i>
+                                            </div>
+                                            <div class="price">
+                                                <p>250 - 460</p>
+                                                <div class="svg_manat">
+                                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1000 1000"
+                                                        enable-background="new 0 0 1000 1000" xml:space="preserve">
+                                                        <metadata> Svg Vector Icons : http://www.onlinewebfonts.com/icon </metadata>
+                                                        <g>
+                                                            <g transform="translate(0.000000,511.000000) scale(0.100000,-0.100000)">
+                                                                <path d="M5005.1,3964.7l-332.4-144.8v-236.6c0-130.5-6.1-269.2-12.2-310l-12.2-73.4l-238.6-46.9c-832.1-161.1-1601-575.2-2225.1-1203.3C1019.8,781,293.8-1172.9,114.3-3620.3L100-3797.8l79.6-12.3c42.8-6.1,263.1-16.3,489.5-24.5l414-14.3v69.3c2,199.9,44.9,921.9,73.4,1170.7c248.8,2321,1240,4091.3,2724.8,4872.5c197.8,106.1,538.4,236.6,685.3,263.1l65.3,14.3v-150.9c0-132.6-118.3-4242.2-155-5343.6c-8.2-248.8-6.1-422.2,4.1-416.1c432.4,242.7,942.3,538.4,962.7,556.8c22.4,20.4,20.4,503.8-8.2,2680c-18.3,1460.3-28.5,2659.6-22.4,2665.7c12.2,14.3,361-63.2,524.2-116.3c73.4-24.5,242.7-95.9,377.3-161.1c1439.9-693.4,2294.5-2529,2539.2-5451.7c55.1-642.5,55.1-642.5,97.9-654.7c18.4-4.1,240.7-16.3,491.5-24.5l456.8-14.3l-14.3,293.7c-51,1062.6-206,1968.2-485.4,2832.9c-713.8,2214.9-2202.7,3767-3818,3985.3l-185.6,24.5l-6.1,432.4c-4.1,326.3-10.2,432.4-30.6,430.3C5347.8,4107.5,5186.6,4042.2,5005.1,3964.7z"
+                                                                />
+                                                            </g>
+                                                        </g>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <div class="etrafli hidden-sm hidden-xs">
+                                                <a href="">More</a>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="right_ul">
+                                                <ul>
+                                                    <li class="str_li">
+                                                        <i class="material-icons">star</i>
+                                                        <i class="material-icons">star</i>
+                                                        <i class="material-icons">star</i>
+                                                        <i class="material-icons">star</i>
+                                                        <i class="material-icons">star</i>
+                                                        <span>1207 reviews</span>
+                                                    </li>
+                                                    <li>
+                                                        <i class="material-icons">wifi_tethering</i>
+                                                        <span>Pulsuz WiFi</span>
+                                                    </li>
+                                                    <li>
+                                                        <i class="material-icons">directions_car</i>
+                                                        <span>Pulsuz avtomobil parkı</span>
+                                                    </li>
+                                                    <li>
+                                                        <i class="material-icons">local_cafe</i>
+                                                        <span>Pulsuz səhər yeməyi</span>
+                                                    </li>
+                                                    <li>
+                                                        <i class="material-icons">pool</i>
+                                                        <span>Su hovuzu</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12 visible-sm visible-xs">
+                                            <div class="etrafli">
+                                                <a href="">More</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-sm-6">
+                                <div class="item_result">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <a href="">
+                                                <img src="./frq-templates/assets/img/content-img/hotel_1.png" alt="" class="img-responsive">
+                                            </a>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="h_name">
+                                                <a href="">
+                                                    <h2>Boulevard Hotel Baku Autographs</h2>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="reyting">
+                                                <p>Bakı</p>
+                                                <i class="material-icons">stars</i>
+                                                <i class="material-icons">stars</i>
+                                                <i class="material-icons">stars</i>
+                                                <i class="material-icons">stars</i>
+                                            </div>
+                                            <div class="price">
+                                                <p>250 - 460</p>
+                                                <div class="svg_manat">
+                                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1000 1000"
+                                                        enable-background="new 0 0 1000 1000" xml:space="preserve">
+                                                        <metadata> Svg Vector Icons : http://www.onlinewebfonts.com/icon </metadata>
+                                                        <g>
+                                                            <g transform="translate(0.000000,511.000000) scale(0.100000,-0.100000)">
+                                                                <path d="M5005.1,3964.7l-332.4-144.8v-236.6c0-130.5-6.1-269.2-12.2-310l-12.2-73.4l-238.6-46.9c-832.1-161.1-1601-575.2-2225.1-1203.3C1019.8,781,293.8-1172.9,114.3-3620.3L100-3797.8l79.6-12.3c42.8-6.1,263.1-16.3,489.5-24.5l414-14.3v69.3c2,199.9,44.9,921.9,73.4,1170.7c248.8,2321,1240,4091.3,2724.8,4872.5c197.8,106.1,538.4,236.6,685.3,263.1l65.3,14.3v-150.9c0-132.6-118.3-4242.2-155-5343.6c-8.2-248.8-6.1-422.2,4.1-416.1c432.4,242.7,942.3,538.4,962.7,556.8c22.4,20.4,20.4,503.8-8.2,2680c-18.3,1460.3-28.5,2659.6-22.4,2665.7c12.2,14.3,361-63.2,524.2-116.3c73.4-24.5,242.7-95.9,377.3-161.1c1439.9-693.4,2294.5-2529,2539.2-5451.7c55.1-642.5,55.1-642.5,97.9-654.7c18.4-4.1,240.7-16.3,491.5-24.5l456.8-14.3l-14.3,293.7c-51,1062.6-206,1968.2-485.4,2832.9c-713.8,2214.9-2202.7,3767-3818,3985.3l-185.6,24.5l-6.1,432.4c-4.1,326.3-10.2,432.4-30.6,430.3C5347.8,4107.5,5186.6,4042.2,5005.1,3964.7z"
+                                                                />
+                                                            </g>
+                                                        </g>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <div class="etrafli hidden-sm hidden-xs">
+                                                <a href="">More</a>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="right_ul">
+                                                <ul>
+                                                    <li class="str_li">
+                                                        <i class="material-icons">star</i>
+                                                        <i class="material-icons">star</i>
+                                                        <i class="material-icons">star</i>
+                                                        <i class="material-icons">star</i>
+                                                        <i class="material-icons">star</i>
+                                                        <span>1207 reviews</span>
+                                                    </li>
+                                                    <li>
+                                                        <i class="material-icons">wifi_tethering</i>
+                                                        <span>Pulsuz WiFi</span>
+                                                    </li>
+                                                    <li>
+                                                        <i class="material-icons">directions_car</i>
+                                                        <span>Pulsuz avtomobil parkı</span>
+                                                    </li>
+                                                    <li>
+                                                        <i class="material-icons">local_cafe</i>
+                                                        <span>Pulsuz səhər yeməyi</span>
+                                                    </li>
+                                                    <li>
+                                                        <i class="material-icons">pool</i>
+                                                        <span>Su hovuzu</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12 visible-sm visible-xs">
+                                            <div class="etrafli">
+                                                <a href="">More</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-sm-6">
+                                <div class="item_result">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <a href="">
+                                                <img src="./frq-templates/assets/img/content-img/hotel_1.png" alt="" class="img-responsive">
+                                            </a>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="h_name">
+                                                <a href="">
+                                                    <h2>Boulevard Hotel Baku Autographs</h2>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="reyting">
+                                                <p>Bakı</p>
+                                                <i class="material-icons">stars</i>
+                                                <i class="material-icons">stars</i>
+                                                <i class="material-icons">stars</i>
+                                                <i class="material-icons">stars</i>
+                                            </div>
+                                            <div class="price">
+                                                <p>250 - 460</p>
+                                                <div class="svg_manat">
+                                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1000 1000"
+                                                        enable-background="new 0 0 1000 1000" xml:space="preserve">
+                                                        <metadata> Svg Vector Icons : http://www.onlinewebfonts.com/icon </metadata>
+                                                        <g>
+                                                            <g transform="translate(0.000000,511.000000) scale(0.100000,-0.100000)">
+                                                                <path d="M5005.1,3964.7l-332.4-144.8v-236.6c0-130.5-6.1-269.2-12.2-310l-12.2-73.4l-238.6-46.9c-832.1-161.1-1601-575.2-2225.1-1203.3C1019.8,781,293.8-1172.9,114.3-3620.3L100-3797.8l79.6-12.3c42.8-6.1,263.1-16.3,489.5-24.5l414-14.3v69.3c2,199.9,44.9,921.9,73.4,1170.7c248.8,2321,1240,4091.3,2724.8,4872.5c197.8,106.1,538.4,236.6,685.3,263.1l65.3,14.3v-150.9c0-132.6-118.3-4242.2-155-5343.6c-8.2-248.8-6.1-422.2,4.1-416.1c432.4,242.7,942.3,538.4,962.7,556.8c22.4,20.4,20.4,503.8-8.2,2680c-18.3,1460.3-28.5,2659.6-22.4,2665.7c12.2,14.3,361-63.2,524.2-116.3c73.4-24.5,242.7-95.9,377.3-161.1c1439.9-693.4,2294.5-2529,2539.2-5451.7c55.1-642.5,55.1-642.5,97.9-654.7c18.4-4.1,240.7-16.3,491.5-24.5l456.8-14.3l-14.3,293.7c-51,1062.6-206,1968.2-485.4,2832.9c-713.8,2214.9-2202.7,3767-3818,3985.3l-185.6,24.5l-6.1,432.4c-4.1,326.3-10.2,432.4-30.6,430.3C5347.8,4107.5,5186.6,4042.2,5005.1,3964.7z"
+                                                                />
+                                                            </g>
+                                                        </g>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <div class="etrafli hidden-sm hidden-xs">
+                                                <a href="">More</a>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="right_ul">
+                                                <ul>
+                                                    <li class="str_li">
+                                                        <i class="material-icons">star</i>
+                                                        <i class="material-icons">star</i>
+                                                        <i class="material-icons">star</i>
+                                                        <i class="material-icons">star</i>
+                                                        <i class="material-icons">star</i>
+                                                        <span>1207 reviews</span>
+                                                    </li>
+                                                    <li>
+                                                        <i class="material-icons">wifi_tethering</i>
+                                                        <span>Pulsuz WiFi</span>
+                                                    </li>
+                                                    <li>
+                                                        <i class="material-icons">directions_car</i>
+                                                        <span>Pulsuz avtomobil parkı</span>
+                                                    </li>
+                                                    <li>
+                                                        <i class="material-icons">local_cafe</i>
+                                                        <span>Pulsuz səhər yeməyi</span>
+                                                    </li>
+                                                    <li>
+                                                        <i class="material-icons">pool</i>
+                                                        <span>Su hovuzu</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12 visible-sm visible-xs">
+                                            <div class="etrafli">
+                                                <a href="">More</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pagination_">
+                            <ul class="pag_ul">
+                                <li>
+                                    <span>Səhifə:</span>
+                                </li>
+                                <li>
+                                    <a href="">1</a>
+                                </li>
+                                <li>
+                                    <a href="">2</a>
+                                </li>
+                                <li>
+                                    <a href="">3</a>
+                                </li>
+                                <li>
+                                    <a href="">4</a>
+                                </li>
+                                <li>
+                                    <span>...</span>
+                                </li>
+                                <li>
+                                    <a href="">10</a>
+                                </li>
+                                <li class="lft_li">
+                                    <a href="">
+                                        <i class="material-icons dis">arrow_back</i>
+                                    </a>
+                                </li>
+                                <li class="rght_li">
+                                    <a href="">
+                                        <i class="material-icons activ_i ">arrow_forward</i>
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="up">
+                <div class="row">
+                    <div class="col-md-8 pull-right">
+                        <div class="main_ul">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <h2>Discover Azerbaijan</h2>
+                                    <ul>
+                                        <li>
+                                            <a href="">About</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Services</a>
+                                        </li>
+                                        <li>
+                                            <a href="">News</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Blog</a>
+                                        </li>
+                                        <li>
+                                            <a href="">FAQ</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Contact us</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-3">
+                                    <h2>Azerbaijan</h2>
+                                    <ul>
+                                        <li>
+                                            <a href="">Culture and art</a>
+                                        </li>
+                                        <li>
+                                            <a href="">History</a>
+                                        </li>
+                                        <li>
+                                            <a href="">National cuisine</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Nature</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Family recreation</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Shopping</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Night life</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Tourism opportunities</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Visa</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Information board</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-3">
+                                    <h2>Services</h2>
+                                    <ul>
+                                        <li>
+                                            <a href="">Hotels</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Houses for rent</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Restaurants</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Entertainmen</a>
+                                        </li>
+                                        <li>
+                                            <a href=""> Tours</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Events</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Transport</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Tourist catalog</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Tour planner</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-3">
+                                    <h2>For companies</h2>
+                                    <ul>
+                                        <li>
+                                            <a href="" class="oreng">Company login</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Register</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Partnership terms</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Ads</a>
+                                        </li>
+                                        <li>
+                                            <a href="">FAQ</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Help</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 pull-left">
+                        <div class="foot_logo">
+                            <a href="">
+                                <img src="./frq-templates/assets/img/content-img/foot_logo.png" alt="" class="img-responsive">
+                            </a>
+                            <div class="desc">
+                                <h5>
+                                    © 2018 Discover Azedrbaijan. All rights reserved.
+                                </h5>
+                                <p>
+                                    Aliquam commodo lorem a ligula vestibulum scelerisque. Quisque interdum blandit eros at fringilla. Curabitur dictum elit
+                                    in mauris faucibus, quis interdum lorem
+                                </p>
+                            </div>
+                            <div class="google">
+                                <a href="">
+                                    <img src="./frq-templates/assets/img/file-img/soon_googleplay.png" alt="">
+                                </a>
+                            </div>
+                            <div class="apple">
+                                <a href="">
+                                    <img src="./frq-templates/assets/img/file-img/soon_appstore.png" alt="">
+                                </a>
+                            </div>
+                            <div class="sosial_i">
+                                <div class="fb">
+                                    <a href="">
+                                        <img src="./frq-templates/assets/img/file-img/fb.svg" alt="" class="img-responsive">
+                                    </a>
+                                </div>
+                                <div class="tw">
+                                    <a href="">
+                                        <img src="./frq-templates/assets/img/file-img/twiiter.svg" alt="" class="img-responsive">
+                                    </a>
+                                </div>
+                                <div class="yt">
+                                    <a href="">
+                                        <img src="./frq-templates/assets/img/file-img/yt.svg" alt="" class="img-responsive">
+                                    </a>
+                                </div>
+                                <div class="inst">
+                                    <a href="">
+                                        <img src="./frq-templates/assets/img/file-img/inst.svg" alt="" class="img-responsive">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="middle">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="title">
+                            <h2>Cal us</h2>
+                            <a href="">
+                                <p>
+                                    <i class="material-icons">phone</i>
+                                    +994-12-545-5340
+                                    <span>Working hours: 09:00 - 21:00</span>
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="title">
+                            <h2>Give feedback</h2>
+                            <a href="">
+                                <p>
+                                    <i class="material-icons">mail</i>
+                                    feedback@discoveraze.com
+                                    <span>Help us to improve</span>
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="title">
+                            <h2>Share your story</h2>
+                            <a href="">
+                                <p>
+                                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                                    #DiscoverAzerbaijan
+                                    <span>Help us to improve</span>
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="title">
+                            <h2>Official partners</h2>
+
+                        </div>
+                        <ul class="photo_logo">
+                            <li>
+                                <a href="">
+                                    <img src="./frq-templates/assets/img/content-img/asnx.png" alt="" class="asnx">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="./frq-templates/assets/img/content-img/Booking.com_logo.png" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="last_footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <ul>
+                            <li>
+                                <a href="">Terms of use</a>
+                            </li>
+                            <li>
+                                <a href="">Privacy policy</a>
+                            </li>
+                            <li>
+                                <a href="">Cookies</a>
+                            </li>
+                            <li>
+                                <a href="">Sitemap</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="nova_logo">
+                            <img src="./frq-templates/assets/img/file-img/Nova_logo.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="c-content hidden">
+        <div class="content" data-lat="40.418051" data-lng="49.844635">
+                <div class="map_star text-center">
+                        <i class="material-icons">stars</i>
+                        <i class="material-icons">stars</i>
+                        <i class="material-icons">stars</i>
+                        <i class="material-icons">stars</i>
+                        <i class="material-icons">stars</i>
+                </div>
+            <h1>Deniz Inn Boutique Hotel</h1>
+            <div class="map_rey">
+                    <i class="material-icons">star</i>
+                    4.8
+            </div>
+        </div>
+        <div class="content" data-lat="40.416612" data-lng="49.851373">
+                <div class="map_star text-center">
+                        <i class="material-icons">stars</i>
+                        <i class="material-icons">stars</i>
+                        <i class="material-icons">stars</i>
+                        <i class="material-icons">stars</i>
+                        <i class="material-icons">stars</i>
+                </div>
+            <h1>Hilton Hotel</h1>
+            <div class="map_rey">
+                    <i class="material-icons">star</i>
+                    5
+            </div>
+        </div>
+    </div>
+    <script src="./frq-templates/assets/js/plugin/bootstrap.min.js"></script>
+    <script src="./frq-templates/assets/js/plugin/owlcarousel/owl.carousel.min.js"></script>
+    <script src="./frq-templates/assets/js/plugin/materialize.min.js"></script>
+    <script src="./frq-templates/assets/js/plugin/lightgallery.min.js"></script>
+    <script src="./frq-templates/assets/js/plugin/lg-fullscreen.min.js"></script>
+    <script src="./frq-templates/assets/js/plugin/lg-thumbnail.min.js"></script>
+    <script src="./frq-templates/assets/js/plugin/OverlayScrollbars.min.js"></script>
+    <script src="./frq-templates/assets/js/plugin/bootstrap-datetimepicker.js"></script>
+    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false&key=AIzaSyCVD3AutfC1kbphLKHYHtuHWXYskne1Yvk&.js"></script>
+    <script src="./frq-templates/assets/js/main.js"></script>
+    <script>
+        var $slider = $('#range').get(0);
+        var $radio = jQuery('.floor-space').find('input');
+        var $min = $('#min');
+        var $max = $('#max');
+        var minVal = 0;
+        var maxVal = 200;
+        var gap = 10;
+        //noUiSlider
+        noUiSlider.create($slider, {
+            start: [minVal - gap, maxVal + gap], //
+            connect: true,
+            step: gap,
+            range: {
+                'min': 0,
+                'max': 200
+            },
+
+        });
+
+        $slider.noUiSlider.on('update', function (values, handle) {
+
+            var value = Math.floor(values[handle]);
+
+            if (handle) {
+                $max.get(0).value = value;
+            } else {
+                $min.get(0).value = value;
+            }
+
+
+            if ($min.attr('name') == 'space_low') {
+
+                var maxVal = 1000;
+                var min = min / 3.30579;
+                var max = (max != 0) ? max / 3.30 : maxVal + 10;
+                $min.attr('name', 'space_low');
+                $max.attr('name', 'space_high');
+
+
+            } else {
+
+                var maxVal = 3300;
+                var min = min * 3.30;
+                var max = (max != 0) ? max * 3.30 : maxVal + 10;
+                $min.attr('name', 'area_low');
+                $max.attr('name', 'area_high');
+
+            }
+
+            jQuery('.noUi-value-large').text('0');
+            jQuery('.noUi-value-large:last-child').text(maxVal);
+
+            if ($min.get(0).value <= minVal || $min.get(0).value > maxVal) {
+                $min.val('');
+            }
+            if ($max.get(0).value <= minVal || $max.get(0).value > maxVal) {
+                $max.val('');
+            }
+
+        });
+
+        $min.get(0).addEventListener('change', function () {
+            $slider.noUiSlider.set([this.value, null]);
+        });
+
+        $max.get(0).addEventListener('change', function () {
+            $slider.noUiSlider.set([null, this.value]);
+        });
+
+        $radio.change(function () {
+
+            var min = Math.floor($min.val());
+            var max = Math.floor($max.val());
+
+            var val = jQuery(this).val();
+
+            if (val == 0) {
+
+                var maxVal = 1000;
+                var min = min / 3.30;
+                var max = (max != 0) ? max / 3.30 : maxVal + 10;
+                $min.attr('name', 'space_low').next('span').text('坪〜');
+                $max.attr('name', 'space_high').next('span').text('坪');
+
+            } else {
+
+                var maxVal = 3300;
+                var min = min * 3.30;
+                var max = (max != 0) ? max * 3.30 : maxVal + 10;
+                $min.attr('name', 'area_low').next('span').text('㎡〜');
+                $max.attr('name', 'area_high').next('span').text('㎡');
+
+            }
+
+            $slider.noUiSlider.updateOptions({
+                range: {
+                    'min': minVal - 5,
+                    'max': maxVal + 10
+                }
+            });
+
+            $slider.noUiSlider.set([min, max]);
+
+            $slider.noUiSlider.on('update', function () {
+                jQuery('.noUi-value-large:last-child').text(maxVal);
+            });
+
+        });
+    </script>
+    <script>
+        var map;
+        var location_list = $('.c-content .content');
+        var marker = [];
+
+        function initialize() {
+            var myLatlng = new google.maps.LatLng(40.418051, 49.844635);
+            var myOptions = {
+                zoom: 16,
+                center: myLatlng,
+                mapTypeId: google.maps.MapTypeId.TERRAIN,
+            }
+            map = new google.maps.Map(document.getElementById("map"), myOptions);
+
+            mapLocation(location_list);
+        }
+        var icon = {
+            url: './TEMP-IMAGES/map_icon2.svg', // url
+            scaledSize: new google.maps.Size(36, 36), // scaled size
+            origin: new google.maps.Point(0, 0), // origin
+            anchor: new google.maps.Point(0, 0) // anchor
+        };
+
+        function createMarker(lat, lon, html) {
+            var newmarker = new google.maps.Marker({
+                position: new google.maps.LatLng(lat, lon),
+                map: map,
+                icon: icon
+            });
+
+            newmarker['infowindow'] = new google.maps.InfoWindow({
+                content: html
+            });
+
+            google.maps.event.addListener(newmarker, 'mouseover', function () {
+                this['infowindow'].open(map, this);
+            });
+            google.maps.event.addListener(newmarker, 'mouseout', function () {
+                this['infowindow'].close();
+            });
+
+
+            marker.push(newmarker);
+        }
+
+
+
+        function mapLocation(location_list) {
+
+            for (var i = 0; i < location_list.length; i++) {
+
+                var lat = parseFloat($(location_list[i]).attr('data-lat'));
+                var lng = parseFloat($(location_list[i]).attr('data-lng'));
+                var content = $(location_list[i]).html();
+
+                createMarker(lat, lng, content);
+            }
+        }
+
+        function load(location_list) {
+            initialize();
+        }
+
+        // function gotoPoint(myPoint){
+        //     map.setCenter(new google.maps.LatLng(marker[myPoint-1].position.lat(), marker[myPoint-1].position.lng()));
+        //     marker[myPoint-1]['infowindow'].open(map, marker[myPoint-1]);
+        // }
+
+
+        window.onload = load(location_list);
+    </script>
+</body>
+
+</html>
